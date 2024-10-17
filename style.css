@@ -1,0 +1,95 @@
+/* Grundläggande stil */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Rubrikstil */
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista och input styling */
+.input-group {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.list-group {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Lista styling */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-2px);
+}
+
+/* Knappens stil */
+.list-group-item button {
+    margin-left: 10px;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+/* Knappens färger */
+.list-group-item button.markBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+.list-group-item button.removeBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.list-group-item button:hover {
+    opacity: 0.9;
+}
+
+/* Markerad vara som köpt */
+.completed {
+    text-decoration: line-through;
+    background-color: #e0f7e9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Knapp för markering som köpt */
+.completed .markBtn {
+    background-color: #ffc107;
+}
+
+/* Anpassning för mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .list-group-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-group-item button {
+        margin-top: 10px;
+    }
+}
